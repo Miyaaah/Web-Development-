@@ -1,0 +1,135 @@
+/* My attempt on copying the exact layout of the given reference: */
+
+/* Affecting the entire content */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* The website's font family. */
+body {
+    font-family: Arial, sans-serif; 
+    font-weight: 400; 
+}
+
+/*Main bg color. */
+.menu {
+    background-color: #17072b;
+    overflow: hidden;
+    display: flex; 
+    justify-content: center; 
+}
+
+/* Styling the navigation bar. */
+.menu a {
+    color: white;
+    text-align: center;
+    padding: 15px 17px;
+    text-decoration: none;
+    font-size: 25px;
+} 
+
+/* Styling and adjusting the header. */
+header {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    font-family:  "Tahoma";
+    font-weight: 700;
+    text-align: center;
+    font-size: 55px;
+    background-color: #17072b;
+    color: white;
+}
+
+/*Container for the header. */
+.header-container {
+    width: 100%;
+    padding: 50px 30px 20px;
+}
+
+/* Use flexbox for flexible layout. */
+main {
+    display: flex; 
+}
+
+/* Styles for main heading */
+h1 {
+    font-weight: 900;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/* Styles for subheadings */
+h2 {
+    font-family: Arial, sans-serif;
+    font-weight: 400;  
+    font-size: 18px;
+}
+
+/* Box container for spacing */
+.box {
+    margin-top: 20px;
+    padding: 10px 0 0 0;
+}
+
+/* Adjusting the positiom of the <section> element. */
+section {
+    font-size: 20px;
+    line-height: 1.3em;
+    padding: 20px 40px 40px 40px;
+    float: left;
+    width: 60%;
+}
+
+/* Paragraph styles within the section. */
+section p {
+    margin-top: 30px;
+}
+
+/* Image settings under <section>.*/
+section img {
+    margin-top: 30px;
+    margin-bottom: 0;
+    float: left;
+    width: 100%;
+}
+
+
+/* Position and styles for the aside tag. */
+aside {
+    font-size: 20px;
+    line-height: 2em;
+    background-color: #172d67;
+    padding: 20px 40px 40px 40px;
+    float: left;
+    width: 40%;
+    color: white;
+}
+
+/* Container for a set of images. */
+.boxes {
+    display: flex; 
+    margin-top: 65px; 
+}
+
+/* Styles for images in the boxes. */
+.boxes img {
+    width: 230px; 
+    height: 230px; 
+    object-fit: cover; 
+    margin: 0 5px; 
+}
+
+/* Styling the footer. */
+footer {
+    background-color: #8c15e9;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin-top: 10px;
+
+}
+
