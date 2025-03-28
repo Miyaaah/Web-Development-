@@ -1,0 +1,52 @@
+/* Body styles. */
+body {
+  background-color: black;
+    margin: 100px auto;
+    color: white; 
+    font-family: "Urbanist", sans-serif;
+}
+
+/* Centering the <h1> element. */
+h1 {
+  text-align: center;
+}
+
+/* Flexbox container for arranging space elements. */
+.space-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+
+
+/* Spacing for the images. */
+.space {
+  text-align: center;
+  margin: 30px;      
+}
+
+/* Adjusting image size. */
+.space img {
+  max-width: 100%; 
+  max-height: 300px; 
+  width: auto;
+  height: auto;
+}
+
+
+/* When the mouse hovers on the photos, it will show filters. */
+#filter1:hover  {
+  filter: contrast(150%);
+  transition: ease-in 0.5s; 
+}
+
+#filter2:hover  {
+  filter: invert(100%); 
+  transition: ease-in 0.5s;
+}
+
+#filter3:hover  {
+  filter: hue-rotate(-94deg);
+  transition: ease-in 0.5s; 
+}
