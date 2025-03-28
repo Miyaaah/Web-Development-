@@ -1,0 +1,138 @@
+/* Resetting default styles and setting up the box model for the layout. */
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+
+
+/* Building and styling the navigation menu. */
+nav { 
+    background: #f12c00;
+    height: 55px;
+    width: 100%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    /* Keep navivagtion bar while scrolling. */
+    position: sticky;
+    z-index: 100;
+    top: 0;
+}
+
+nav ul {
+    display: flex;
+    margin-right: 20px; 
+}
+
+nav ul li {
+   
+    display: inline-block;
+    line-height: 75px; 
+    margin: 0 70px;
+}
+
+nav ul li a {
+    
+    font-family: "Saira", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    text-transform: uppercase;
+    padding: 5px 13px;
+    border: 2px solid transparent;
+    
+    
+}
+
+/* Box selection effect */
+a.active, nav ul li a:hover {
+    border-color: white;
+    border-style: solid;
+    transition: ease-in .1s;
+}
+
+
+/* This time, the default background is black, and the font color is white. */
+body {
+    height: 100vh;
+    font-family: "Outfit", sans-serif;
+    background-color: black;
+    color: white;   
+}
+
+
+/* SIGNALIS header and its positioning. */
+#title2 {
+    font-weight: 200;
+    font-family: "Outfit", sans-serif;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+/* This is to center the section names */
+.sub{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/*The style for <p>.*/
+p {
+    font-size: 20px;
+    line-height: 1.6; 
+    margin-top: 30px;
+    margin-bottom: 20px; 
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+/*The style for <h2>.*/
+h2 {
+    font-size: 30px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+/* This is for the content for the Team's page. */
+.boxH {
+    padding: 15px, 30px;
+    margin-left: 30px;
+}
+
+
+/* This is for the content's layout for the characters page.*/
+.characterbox {
+    display: grid; 
+    grid-template-columns: 33% 33% 33%;
+    margin-left: 30px;
+}
+
+.character {
+    padding: 10px;
+}
+
+/*Transition effect for content when navigating to a new page.*/
+.fade-in {
+    opacity: 0; 
+    transform: translateX(-20px); 
+    animation: fadeInLeft 0.8s ease forwards; 
+}
+
+/* Keyframes for fade-in animation. */
+@keyframes fadeInLeft {
+    to {
+        opacity: 1;
+        transform: translateX(0); /
+    }
+}
+
+.fade-in:nth-of-type(1) { animation-delay: 0s; } 
+.fade-in:nth-of-type(2) { animation-delay: 0.2s; }  
+.fade-in:nth-of-type(3) { animation-delay: 0.4s; }  
+.fade-in:nth-of-type(4) { animation-delay: 0.6s; } 
+.fade-in:nth-of-type(5) { animation-delay: 0.8s; } 
