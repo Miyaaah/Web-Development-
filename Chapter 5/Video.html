@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Embeded Video</title> <!-- Site's title. -->
+
+    <style>
+         body, html { /* To center the video horizontally and vertically.*/
+            height: 100%; /* Full height for body and html. */
+            display: grid; /* Use CSS Grid for layout. */
+            place-items: center; /* Center items in the grid. */
+            background-color: black; /* Set background color to black */
+        }
+    </style>
+</head>
+
+<body>
+    <!--Using the video tag to put our video, and the ratio of the video. -->
+    <video width="560" height="315"  poster="Poster.jpg" controls loop> <!-- Poster image for the video's thumbnail. -->
+        <source src="GOLDILOCKS AND THE 3 BEARS _ TWINE.mp4" type="video/mp4"> <!-- Video source file. -->
+    </video>
+</body>
+</html>
