@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="recipe.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Importing fonts  for this site.-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&display=swap" rel="stylesheet">
+
+   <title>Leche Flan Recipe Page</title>
+</head>
+
+<body>
+
+    <!--Starting the website with a styled header.-->
+    <div class="header" alt="Leche Flan"> </div>
+        
+    <!-- The recipe name of the dessert using h1 tag, and br tag to put "recipe" underneath "Leche flan"-->
+    <h1 ID="Cen"> LECHE FLAN <br> RECIPE </h1> <!--ID used to center the title. -->
+    
+    <p> Leche Flan is the ultimate sweet treat! This classic Filipino custard is a guaranteed crowd-pleaser, rich, smooth, and creamy with a golden caramel topping. </p>
+
+    <!-- An image for layout design, separating sections -->
+    <div class="img">
+        <img src='header.jpg'>
+    </div> 
+
+    <!-- Using h2 tag for the titles of the rest of the body. -->
+    <div class="ingredients-container">
+        <div class="box">
+            <h2>INGREDIENTS</h2>
+                <ul style="list-style-type: circle;"> <!-- Using unordered list for the ingredients. -->
+                    <li>12 egg yolks</li>
+                    <li>1 can evaporated milk, especially Carnation brand</li>
+                    <li>1 can condensed milk</li>
+                    <li>1 teaspoon vanilla extract</li>
+                    <li>3/4 cup granulated sugar</li>
+                    <li>2 tablespoons water</li>
+                </ul> 
+        </div> <!-- Image to separate section. -->
+        <img src="https://www.hungryhuy.com/wp-content/uploads/leche-flan-ingredients.jpg"  alt="Ingredients" class="ingredients-image">
+    </div>
+
+    <div class="ingredients-container"> <!-- Reusing this for better layout-->
+        <div class="box2">
+            <h2>STEPS TO MAKE LECHE FLAN</h2> 
+            <ol> <!-- Using ordered list tag for the instructions. -->
+                <li>Preheat oven to 350°F/180°C.</li>
+                <li>Whisk egg yolks gently, then add condensed milk, evaporated milk, and vanilla extract and stir until combined. (If you whisk too hard, you'll get little bubbles in your flan.)</li>
+                <li>Add the sugar and water to a pot over medium heat and cook until sugar dissolves. Lower heat and cook, shaking pan (don't stir!) until dark golden brown. Pour melted sugar into a baking pan (I used a 9-inch cake pan) and tilt pan around until evenly coated. Let set for a few minutes until it hardens.</li>
+                <li>Pour the milk and egg mixture through a fine sieve into the pan, on top of the caramel. Take a baking tray or dish—anything that is large enough to fit your flan—and place the pan inside. Pour about an inch of boiling water into the large, outside tray. Put the tray (with the pan inside) into the oven and bake until a toothpick comes out clean, around 50 to 60 minutes.</li>
+                <li>Remove the pan from the water bath and let cool. Then, refrigerate until cold. (Don't rush this! If it it's too warm, it might fall apart.) Once cold, run a knife around the edges. Invert onto a rimmed serving plate (there will be extra syrup that flows around it).</li>
+            </ol>
+        </div>
+    </div>
+
+        
+
+    <h2>Common CSS Properties Used: </h2>
+    <!-- Here are some frequently used CSS properties.-->
+    <pre><code>
+        padding: 30px;                      Space inside the element
+        margin-left: 20px;                  Space outside the element 
+        width: 30%;                         Width of the element 
+        height: 400px;                      Height of the element 
+        font-family: "Sniglet", system-ui;  Font style 
+        font-size: 100px;                   Size of the text 
+        color: #AF3A19;                     Text color 
+        text-align: center;                 Center text
+        display: flex;                      To create flexible layouts with elements
+        background-image: url('link');      Background image 
+    </code></pre>
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+/* Starting by customizing the body for layout and font style. */
+body {
+  margin: 0;
+  font-family: "Sniglet", system-ui;
+
+}
+
+/* To create a layout, I start by making a header before the title. */
+.header {
+  text-align: center;
+  background-image: url('https://www.kawalingpinoy.com/wp-content/uploads/2020/04/creamy-leche-flan-3.jpg'); 
+  background-size: cover; 
+  background-position: 20% 75%; 
+  height: 400px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+}
+
+/* Creating the title of the page using h1 tag, I styled the color and font and centering it.*/
+h1 {
+  color: rgb(72, 22, 0);
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 100px;
+}
+
+/* This is to adjust the image nicely to the site. */
+.img {
+  width: 100%;
+  overflow: hidden; /* Hides excess image overflow. */
+  }
+
+/* Styling the paragraph tag underneath the h1 tag, making a lovely layout. */
+p {
+    padding: 30px;
+    background-color:rgb(247, 226, 183);
+    color: #850404;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 70px; 
+}
+
+/* Styling the h2 tag, matching the theme.*/
+h2 {
+    padding: 10px;
+    border-left: 10px solid rgb(198, 65, 3);
+    color: #AF3A19;
+    font-size: 43px;
+    font-weight: 500;
+}
+
+/* This is used to organize and create a layout of the site. */
+.ingredients-container {
+  display: flex;
+  align-items: flex-start; 
+  justify-content: flex-start; 
+  margin: 20px;
+}
+
+/* Boxes are used to organize and select the items for each content (e.g. the ingredients and steps. A box each). */
+.box {
+    margin-left: 20px;
+    width: 30%; 
+    padding: 30px;
+}
+
+.box2 {
+  width: 690px; 
+  padding: 20px; 
+  margin-left: 20px; 
+  margin-top: 20px; 
+}
+
+
+
+/* Creating space between ingredients and image. */
+.ingredients-image {
+    width: 43%; 
+    padding: 30px;
+    margin-left: 220px; 
+    margin-top: auto;
+}
+
+
+/* Designing the unordered list. */
+ul {
+    line-height: 2;
+    margin-bottom: 10px; 
+    font-size: 25px;
+    color:#b97208;
+    white-space: nowrap; 
+  }
+
+/* Designing the ordered list. */
+ol {
+  line-height: 1.5;
+  margin-bottom: 10px; 
+  font-size: 25px;
+  color: #b97208;
+  white-space: normal; 
+  padding-left: 55px; 
+}
+
+/* Creating a customized bullet/number for each list, following the color theme, while also adjusting the alignement and spaces. */
+li::marker {
+  color: rgb(244, 167, 0);
+  font-size: 1.5em;
+}
+  
+li {
+  margin-bottom: 10px; 
+}
+
+
+
+
