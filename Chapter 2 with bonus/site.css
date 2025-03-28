@@ -1,0 +1,160 @@
+/* Resetting default styles and setting up the box model for the layout. */
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+
+/* Building and styling the navigation menu. */
+nav { 
+    background: #f12c00;
+    height: 55px;
+    width: 100%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+nav ul {
+    display: flex;
+    margin-right: 20px; 
+}
+
+nav ul li {
+   
+    display: inline-block;
+    line-height: 75px; 
+    margin: 0 70px;
+}
+
+nav ul li a {
+    
+    font-family: "Saira", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    text-transform: uppercase;
+    padding: 6px 13px;
+    border: 2px solid transparent;
+    
+    
+}
+
+
+
+/* Box selection effect */
+a.active, nav ul li a:hover {
+    border-color: white;
+    border-style: solid;
+    transition: ease-in .1s;
+}
+
+/* This is for the background design, hence why I made a separate css file for the home page.*/
+body {
+    height: 100vh;
+    font-family: "Outfit", sans-serif;
+    color: white;
+    background: linear-gradient(rgb(54, 13, 16) 10%, black); /* Gradient background */
+    background-size: 300% 300%;
+    animation: bg 4s ease infinite; /* Animating the movements of the background. */
+}
+
+/* Using keyframes to create a gradient animation effect background. */
+@keyframes bg{
+
+    0% {
+        background-position: 20% 50%; 
+    }
+    25% {
+        background-position: 100% 50%; 
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    75% {
+        background-position: 0% 50%; 
+    }
+    100% {
+        background-position: 0% 50%; 
+    }
+}
+
+/* Creating a glowing effect for the <p> tag. */
+p {
+    color: white;
+    text-shadow: 
+        0 0 5px rgba(255, 255, 255, 0.7), /* White text glow effect! */
+        0 0 10px rgba(255, 255, 255, 0.5), 
+        0 0 15px rgba(255, 255, 255, 0.3); 
+}
+
+/* Styling the game name (SIGNALIS). */
+.title {
+    font-weight: 200;
+    font-family: "Outfit", sans-serif;
+    font-size: 25px;
+    text-align: center;
+    text-shadow: /* Glowing text effect */
+        0 0 5px rgba(255, 255, 255, 0.7), 
+        0 0 10px rgba(255, 255, 255, 0.5), 
+        0 0 15px rgba(255, 255, 255, 0.3); 
+    margin-bottom: 28px;
+    margin-top: 230px;
+    transition: height 0.66s ease-out;
+}
+
+/* Styling the subtext underneath the title. */
+#desc {
+    font-style: italic;
+    font-family: "Lexend", sans-serif;
+    font-size: 23px ;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+
+/* Styling the button. */
+.button {
+    margin-top: 140px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+/* Hover effect of the button*/
+
+#download {
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    padding: 15px 35px;
+    border: #e03a2b solid 2px; 
+    border-radius: 50px;
+    display: inline-block; 
+    margin: 0 auto; 
+    text-decoration: none ;
+    transition: background-color 0.5s ease, color 0.3s ease; /* Fade in color for smooth effects. */
+}
+
+#download a {
+    color: white; 
+    text-decoration: none; 
+}
+
+
+#download a:hover {
+    color: white; 
+}
+
+#download:hover {
+    background-color: #e03a2b;
+    color: white; /
+}
+
+
+
+
