@@ -1,0 +1,64 @@
+body {
+    font-family: "Wix Madefor Text", sans-serif; /* New font style. */
+    display: flex; 
+    justify-content: center; /* Center horizontally. */
+    align-items: center; /* Center vertically. */
+    height: 100vh; 
+    margin: 0; /* Remove default margin. */
+}
+
+/* Designing the calculator's layout. */
+#Calculator {
+    text-align: left; /* Align text to the left */
+    font-size: 20px; 
+    color: white; 
+    line-height: 2em; 
+    border: 1px solid #ccc; /* Adding a border. */
+    padding: 40px; 
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.589); /* Shadow effect */
+    background-color: #131313; 
+}
+
+/*Styling the name of the calculator. */
+h1 {
+    font-size: 38px; 
+    color: #ffbf00; 
+}
+
+/*Styling the name of the input box. */
+input[type="text"] {
+    font-family: "Wix Madefor Text", sans-serif; 
+    font-size: 16px; 
+    width: 200px; 
+    padding: 5px; 
+    border-radius: 15px; 
+    margin-bottom: 10px; 
+}
+
+/* Color on hover */
+input[type="text"]:hover {
+    background-color: #fff9c5; 
+    transition: ease-in 0.1s; /* A smooth transition effect. */
+}
+
+/* Styling the button*/
+button {
+    margin-top: 15px; 
+    background-color: #f38a00; 
+    color: white; 
+    padding: 10px 15px; 
+    border: none; /* No border */
+    border-radius: 25px; 
+    cursor: pointer; 
+    font-size: 18px; /* Size of button text */
+}
+
+p {
+    margin-left: 8px; 
+}
+
+/* Darker color on button hover */
+button:hover {
+    background-color: #cd4b00; 
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="Petrol.css" type="text/css"> <!-- Linking this file to my CSS stylesheet. -->
+
+    <!-- Importing font from google fonts. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+
+    <title>Petrol Calculator</title> <!-- Site's name. -->
+</head>
+
+<body>
+    <div id="Calculator"> <!-- Calculator class so I can design it's properties. -->
+        <h1>Petrol Calculator</h1> <!-- Name of the calculator. -->
+
+        Petrol price: <br> 
+        <input type="text" id="price" value="1.72" /><br> <!-- Petrol price user input with the default value of 1.72 -->
+        Number of liters: <br>
+        <input type="text" id="liters" value="0" /><br> <!--Number of liters user input with the default value of 0.  -->
+
+        <button type="button" onClick="calculateTotal()">Calculate</button> <!-- Button to display the total. -->
+
+        <p>Result: <br> <!-- <p> tag to display results. -->
+        <span id="result"></span> <!-- Span tag to display the total cost after calculation. -->
+        </p> 
+    </div>
+
+    <script> // Script for the calculator.
+    function calculateTotal() { // Define a function named calculateTotal.
+        // Get the number of liters from the input.
+        let liters = document.getElementById("liters").value;
+    
+        // Get the price from the input (in case the user changes it).
+        let price = document.getElementById("price").value; // Retrieve the value entered in the "price" input field.
+
+
+        // Calculate total cost.
+        let totalCost = price * liters; // Multiply the price by the number of liters to get the total cost.
+
+    
+        // Display the result/price.
+        document.getElementById("result").innerHTML = '$' + totalCost.toFixed(2); // .toFixed(2) makes sure the total cost shows two decimal places, so it displays like a standard price.
+    }
+    </script>
+</body>
+</html>
